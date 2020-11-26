@@ -6,6 +6,7 @@ package pattern_06_abstract_factory;
  * 男性白种人
  */
 public class WhiteMaleHuman extends AbstractWhiteHuman {
+    @Override
     public void sex() {
         System.out.println("该白种人的性别为男....");
     }

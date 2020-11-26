@@ -15,6 +15,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
     /*
      * 家庭地址
      */
+    @Override
     public String getHomeAddress() {
         String homeAddress = (String) this.homeInfo.get("homeAddress");
         System.out.println(homeAddress);
@@ -24,6 +25,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
     /*
      * 家庭电话号码
      */
+    @Override
     public String getHomeTelNumber() {
         String homeTelNumber = (String) this.homeInfo.get("homeTelNumber");
         System.out.println(homeTelNumber);
@@ -33,6 +35,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
     /*
      *职位信息
      */
+    @Override
     public String getJobPosition() {
         String jobPosition = (String) this.officeInfo.get("jobPosition");
         System.out.println(jobPosition);
@@ -42,6 +45,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
     /*
      * 手机号码
      */
+    @Override
     public String getMobileNumber() {
         String mobileNumber = (String) this.baseInfo.get("mobileNumber");
         System.out.println(mobileNumber);
@@ -50,6 +54,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
 
     /* 办公电话
      */
+    @Override
     public String getOfficeTelNumber() {
         String officeTelNumber = (String) this.officeInfo.get("officeTelNumber");
         System.out.println(officeTelNumber);
@@ -59,6 +64,7 @@ public class OuterUserInfo extends OuterUser implements IUserInfo {
     /*
      * 员工的名称
      */
+    @Override
     public String getUserName() {
         String userName = (String) this.baseInfo.get("userName");
         System.out.println(userName);
