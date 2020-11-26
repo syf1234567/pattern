@@ -1,6 +1,6 @@
 package pattern_20_protobyte;
 
-public class Mail {
+public class Mail implements Cloneable {
 
     //收件人
     private String receiver;
@@ -17,6 +17,18 @@ public class Mail {
     public Mail(AdvTemplate advTemplate) {
         this.contxt = advTemplate.getAdvContext();
         this.subject = advTemplate.getAdvSubject();
+    }
+
+    @Override
+    public Mail clone(){
+        Mail mail =null;
+        try {
+            mail = (Mail)super.clone();
+        } catch (CloneNotSupportedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return mail;
     }
 
     //以下为getter/setter方法
